@@ -1,0 +1,27 @@
+/* Fun, colorful animated card style */
+.card {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
